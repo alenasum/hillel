@@ -6,10 +6,6 @@ while (isOperandInvalid(operand)) {
 
 operand = Number(operand);
 
-function isOperandInvalid(inval) {
-    return inval === null || inval.trim() === '' || isNaN(inval) || inval <= 0
-}
-
 let chetnoe = 0;
 let nechetnoe = 0;
 let result = 0;
@@ -26,3 +22,7 @@ while (result <= operand) {
 
 alert('Сумма четных: ' + chetnoe);
 alert('Сумма нечетных: ' + nechetnoe);
+
+function isOperandInvalid(inval) {
+    return inval === null || inval.trim() === '' || isNaN(inval) || inval <= 0
+}
